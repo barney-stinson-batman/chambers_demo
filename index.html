@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chambers — TriBeCa, New York</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <nav class="nav" id="nav">
+    <a href="#" class="nav__logo">Chambers</a>
+    <ul class="nav__links">
+      <li><a href="#story">Story</a></li>
+      <li class="nav__dropdown">
+        <span>Menus</span>
+        <ul class="nav__submenu">
+          <li><a href="#menu">Eat</a></li>
+          <li><a href="#menu">Drink</a></li>
+          <li><a href="#menu">Wine List</a></li>
+          <li><a href="#menu">After</a></li>
+        </ul>
+      </li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#reservations">Reservations</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a href="https://www.opentable.com/r/chambers-new-york" target="_blank" class="nav__reserve btn">Reserve</a>
+    <button class="nav__burger" id="burger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="mobileClose">✕</button>
+    <ul>
+      <li><a href="#story" class="mobile-link">Story</a></li>
+      <li><a href="#menu" class="mobile-link">Menus</a></li>
+      <li><a href="#team" class="mobile-link">Team</a></li>
+      <li><a href="#reservations" class="mobile-link">Reservations</a></li>
+      <li><a href="#visit" class="mobile-link">Visit</a></li>
+      <li><a href="https://www.opentable.com/r/chambers-new-york" target="_blank">Reserve a Table</a></li>
+    </ul>
+  </div>
+
+  <section class="hero">
+    <div class="hero__bg">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/68ccbdaa5c055c4d4f97ede3/59356d42-f458-4c6f-9260-e2957027b286/Chambers_AlexStaniloff_061225-214.jpg"
+        alt="Chambers interior" class="hero__img" />
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow fade-up">94 Chambers Street · TriBeCa, New York</p>
+      <h1 class="hero__title fade-up">
+        <span>Chambers</span>
+      </h1>
+      <p class="hero__sub fade-up">Seasonal New York Cooking · Natural Wine · Neighbourhood Soul</p>
+      <div class="hero__actions fade-up">
+        <a href="https://www.opentable.com/r/chambers-new-york" target="_blank" class="btn btn--light">Reserve a
+          Table</a>
+        <a href="#menu" class="btn btn--ghost">View Menus</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+    <div class="hero__accolades">
+      <span>James Beard Nominee 2026</span>
+      <span class="sep">·</span>
+      <span>NYT Best NYC Restaurants 2025</span>
+    </div>
+  </section>
+
+  <section class="quote-section">
+    <div class="quote-section__inner">
+      <blockquote class="pull-quote reveal">
+        "Destination-worthy dining,<br>with a neighbourhood vibe."
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="story" id="story">
+    <div class="story__grid">
+      <div class="story__text reveal">
+        <p class="label">Our Story</p>
+        <h2 class="story__heading">Where craft meets<br><em>community</em></h2>
+        <p class="story__body">
+          Whether you're visiting from down the block in TriBeCa, from uptown, or from halfway around the world —
+          Chambers aspires to be at the top of your list. Chef Jon Karis' weekly-changing menu showcases the finest
+          seasonal New York City cooking, while Beverage Director Pascaline Lepeltier leads one of the world's most
+          exploratory natural wine programs.
+        </p>
+        <p class="story__body">
+          We believe in having it all: meticulous preparation, soulful flavour, and a welcome that feels genuinely warm.
+          No matter if you're here for a special occasion or a spontaneous glass at the bar, we're thrilled to help you
+          discover something new.
+        </p>
+        <a href="#team" class="link-arrow">Meet the team →</a>
+      </div>
+      <div class="story__images reveal">
+        <div class="story__img-stack">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/68ccbdaa5c055c4d4f97ede3/65bcc0b9-75af-41b6-9563-0314fc0ca005/Chambers_AlexStaniloff_061225-164.jpg"
+            alt="Chambers dining room" class="story__img story__img--main" />
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/68ccbdaa5c055c4d4f97ede3/64f8aa3d-e188-4165-b2f7-712e582c22c1/Chambers_AlexStaniloff_061225-258.jpg"
+            alt="Chambers detail" class="story__img story__img--secondary" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pillars">
+    <div class="pillars__inner">
+      <div class="pillar reveal">
+        <span class="pillar__num">01</span>
+        <h3>Seasonal Menu</h3>
+        <p>A weekly-changing menu built on New York's finest farms and purveyors, prepared with European technique and
+          craveable soul.</p>
+      </div>
+      <div class="pillar reveal">
+        <span class="pillar__num">02</span>
+        <h3>Natural Wine</h3>
+        <p>A 2,000+ label wine list curated by Master Sommelier Pascaline Lepeltier — exploratory, biodynamic, and
+          genuinely approachable.</p>
+      </div>
+      <div class="pillar reveal">
+        <span class="pillar__num">03</span>
+        <h3>True Hospitality</h3>
+        <p>Service led by Jared David, creating an atmosphere that puts comfort and pleasure at the forefront of every
+          visit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu-section" id="menu">
+    <div class="menu-section__header reveal">
+      <p class="label">The Menu</p>
+      <h2>A taste of what's on<br><em>tonight</em></h2>
+      <p class="menu-section__note">Our menu changes weekly — the dishes below reflect current offerings.</p>
+    </div>
+
+    <div class="menu-tabs">
+      <button class="tab active" data-tab="first">First</button>
+      <button class="tab" data-tab="then">Then</button>
+      <button class="tab" data-tab="sides">Sides</button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+
+      <div class="tab-panel active" data-panel="first">
+        <div class="menu-item reveal">
+          <div class="menu-item__left">
+            <h4>Scallops</h4>
+            <p>rhubarb · shiso</p>
+          </div>
+          <span class="menu-item__price">$26</span>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item__left">
+            <h4>Badger Flame Beets</h4>
+            <p>nduja · pine nut · nancy's camembert</p>
+          </div>
+          <span class="menu-item__price">$26</span>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item__left">
+            <h4>Campo Rosso Little Gems</h4>
+            <p>radish · queso invierno</p>
+          </div>
+          <span class="menu-item__price">$25</span>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item__left">
+            <h4>Rhode Island Squid</h4>
+            <p>fava beans · hazelnuts</p>
+          </div>
+          <span class="menu-item__price">$25</span>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item__left">
+            <h4>Veal Sweetbreads</h4>
+            <p>tokyo turnips · garlic chives</p>
+          </div>
+          <span class="menu-item__price">$24</span>
+        </div>
+        <div class="menu-item snack reveal">
+          <div class="menu-item__left">
+            <h4>Sesame Pizza Bianca</h4>
+            <p>complimentary with dinner · $5 as a snack</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-panel="then">
+        <div class="menu-item reveal">
+          <div class="menu-item__left">
+            <h4>Cavatelli</h4>
+            <p>spring onion · shiitake · lemon</p>
+          </div>
+          <span class="menu-item__price">$36</span>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item__left">
+            <h4>Golden Tilefish</h4>
+            <p>asparagus · green garlic · hollandaise</p>
+          </div>
+          <span class="menu-item__price">$44</span>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item__left">
+            <h4>Snowdance Chicken</h4>
+            <p>spinach · sherry · thyme</p>
+          </div>
+          <span class="menu-item__price">$42</span>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item__left">
+            <h4>Spring Sausage</h4>
+            <p>kohlrabi · fennel · mustard</p>
+          </div>
+          <span class="menu-item__price">$44</span>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item__left">
+            <h4>Hanger Steak</h4>
+            <p>garlic scape butter</p>
+          </div>
+          <span class="menu-item__price">$58</span>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-panel="sides">
+        <div class="menu-item reveal">
+          <div class="menu-item__left">
+            <h4>Potatoes</h4>
+            <p>ramps</p>
+          </div>
+          <span class="menu-item__price">$14</span>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item__left">
+            <h4>Carrots</h4>
+            <p>habanada</p>
+          </div>
+          <span class="menu-item__price">$12</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="menu-section__cta reveal">
+      <a href="https://www.opentable.com/r/chambers-new-york" target="_blank" class="btn btn--dark">Reserve Your
+        Table</a>
+    </div>
+  </section>
+
+  <div class="img-divider">
+    <img
+      src="https://images.squarespace-cdn.com/content/v1/68ccbdaa5c055c4d4f97ede3/5c862e85-40cc-4bc4-8960-07ba49946c7d/Chambers_AlexStaniloff_061225-279.jpg"
+      alt="Chambers atmosphere" />
+    <div class="img-divider__overlay">
+      <p>"Meticulous preparation. Craveable soul."</p>
+    </div>
+  </div>
+
+  <section class="team" id="team">
+    <div class="team__header reveal">
+      <p class="label">The People</p>
+      <h2>Crafted by hands<br>guided by <em>passion</em></h2>
+    </div>
+
+    <div class="team-full reveal">
+      <div class="team-full__portrait">
+        <img src="jonathan karis.webp" alt="Jonathan Karis — Executive Chef" />
+        <div class="team-full__name-plate">
+          <p class="team-full__role">Executive Chef &amp; Partner</p>
+          <h3>Jonathan Karis</h3>
+        </div>
+      </div>
+      <div class="team-full__bio">
+        <p>Born and raised in Fitchburg, MA, Jonathan Karis grew up in a family of avid cooks. His parents, both
+          teachers, were home for dinner every night: Jon's dad, a first generation Greek American, would often cook
+          dinner, including Jonathan's favorites Moussaka, kritharaki: orzo with roast beef dripping and tomato; and his
+          mother would bake desserts. As a family, they also loved to explore the Boston and Worcester area dining
+          scenes for family dinners.</p>
+
+        <p>In college, Jonathan initially pursued a Bachelor of Science degree in Biology from Boston University, but
+          his early calling to food pulled him back into the kitchen. During his senior year, he began cooking
+          professionally at a small, family-owned seasonal Italian restaurant, <em>La Morra</em>, igniting his passion
+          of the culinary arts. After later moving to the Bay Area, CA, where his wife is from, Jonathan was hired as a
+          Line Cook at <em>Incanto</em>, a local Italian restaurant. When the restaurant closed, he moved to a seasonal
+          Spanish restaurant, <em>Duende</em>.</p>
+
+        <p>In 2015, Jonathan fulfilled his dream to live and work in New York City where he started as a Line Cook at
+          Danny Meyer's renowned <em>Gramercy Tavern</em> alongside celebrated Executive Chef Michael Anthony. Over the
+          years, his dedication and skill led him through the ranks, from Line Cook to Sous Chef, Executive Sous Chef,
+          and eventually, Chef de Cuisine.</p>
+
+        <p>After meeting Pascaline Lepeltier and Jared David through a mutual friend, Jonathan's career took a pivotal
+          turn when he joined their team as the Executive Chef and Partner at <em>Chambers</em>. Owning a business has
+          always been a dream of his, and this opportunity allowed him to step into a leadership role while continuing
+          to do what he loves in the kitchen. At <em>Chambers</em>, Jonathan was given free reign to develop a menu
+          based on his previous experiences cooking in seasonal kitchens. His menu features seasonal New York cuisine
+          with European technique and influences — with signature dishes like <strong>Veal Sweetbreads</strong> with
+          Tokyo turnips and garlic chives, and <strong>Snowdance Chicken</strong> with spinach, sherry and thyme. The
+          menu changes frequently and is expertly paired with the restaurant's exploratory menu of accessible natural
+          wines.</p>
+
+        <p>Looking ahead, Jonathan's ultimate goal is to mentor the next generation of culinary professionals. He aims
+          to inspire young chefs to find their own paths while upholding the values of craftsmanship, creativity, and
+          passion in the kitchen.</p>
+      </div>
+    </div>
+
+    <div class="team-full team-full--reverse reveal">
+      <div class="team-full__portrait">
+        <div class="team-full__portrait-styled team-full__portrait-styled--pl">
+          <img src="pascaline lepeltier.webp"
+            alt="Pascaline Lepeltier — Beverage Director, Master Sommelier &amp; Partner" />
+        </div>
+        <div class="team-full__name-plate">
+          <p class="team-full__role">Beverage Director, Master Sommelier &amp; Partner</p>
+          <h3>Pascaline Lepeltier</h3>
+        </div>
+      </div>
+      <div class="team-full__bio">
+        <p>Growing up in the Loire Valley, Pascaline Lepeltier pivoted from a master's in philosophy and a career as a
+          university teacher to the hospitality industry at the two star Michelin-rated <em>L'Auberge Bretonne</em>
+          under celebrated Chef Jacques Thorel, where her obsession with wine began. Within a year, she was named both
+          Best Loire Valley Young Sommelier and Best Brittany Sommelier.</p>
+
+        <p>While working as Beverage Director at Rouge Tomate in Brussels, she interned at the George V in Paris under
+          the direction of Best European Sommelier and Best World Sommelier runner-up Eric Beaumard. Promoted to the
+          position of Beverage Director for the Rouge Tomate flagship in New York, she moved to Manhattan in 2009.
+          Within months, she was named one of the five best new US sommeliers of 2011 by <em>Wine &amp; Spirits,</em>
+          one of the "New Wine Prophets" by <em>Time Out NY</em>, one of the "40 under 40" beverage influencers by
+          <em>Wine Enthusiast</em> and dubbed the "Natural Wine Evangelist" by Ray Isle in <em>Food &amp; Wine</em>. Her
+          work championing natural wines at Rouge Tomate continued to earn her accolades: <em>The New York Times</em>
+          awarded her Rouge Tomate wine list as one of the best in NYC in 2013, and <em>The World of Fine Wine</em>
+          awarded it "Best Long Wine List in the World 2017" and "Wine List of the Year 2017."</p>
+
+        <p>In 2014, Pascaline passed the Master Sommelier Diploma, and in 2018, she won 2 more major titles in her home
+          country: she is now a laureate of "Un des Meilleurs Ouvriers de France - Sommellerie" and Best French
+          Sommelier 2018. In January 2019, the famous French magazine La Revue du Vin de France awarded her "Personality
+          of the Year 2019", the first woman to be given this prestigious recognition. In 2023, she represented France
+          in the ASI Best Sommelier in the World held in Paris, where she finished 4th. In 2024, she was the runner-up
+          of the ASI Best Sommelier of Europe, Middle-East and Africa.</p>
+
+        <p>Meanwhile in 2016, after years spent working harvests in vineyards as much as she could, Pascaline partnered
+          with winemaker Nathan Kendall on <em>chëpìka</em>, a wine project to rediscover the potential of
+          organically-grown native grapes and sparkling wines in the Finger Lakes. In 2017, she collaborated with
+          acclaimed author Alice Feiring for <em>The Dirty Guide to Wine</em>. Since then, she worked with photographer
+          Hélène de Fontainieu to publish a photography book called <em>Domaine aux Moines, A Year in the Heart of the
+            Loire Valley Vineyard</em> (Editions de l'Entre-Coeur), dedicated to the work of Tessa Laroche in
+          Savennières. In 2022, she published her first solo book, <em>Mille Vignes, Penser le vin de demain</em>
+          (Editions Hachette Pratique). The English version, <strong>One Thousand Vines</strong>, was published in
+          November 2024 by Octopus Publishing, to critical acclaim.</p>
+
+        <p>In 2018, Pascaline became a partner in <em>Racines NY</em>, one of the top wine destinations in the USA. In
+          2022, alongside Chef Jonathan Karis, General Manager Jared David and wine guru David Lillie, they reimagined
+          the Racines space to become <em>Chambers</em>, a farm-to-table wine-focused restaurant in TriBeCa where she is
+          Partner and the Beverage Director. Here, Pascaline aims to deliver an exemplary wine list of tomorrow. She
+          oversees a 2,000+ accessible yet exploratory wine list focusing on <em>vin de vignerons:</em> mostly
+          biodynamic, organic and natural wines, handpicked for their commitment to sustainable farming, which, paired
+          with Chef Jon Karis' menu highlighting locally sourced ingredients, makes for a destination-worthy experience.
+        </p>
+
+        <p>When she's not on the floor at Chambers or working a harvest, Pascaline pursues her passion about wine
+          education. She has written for various prominent wine guides and books in France – including <em>The World of
+            Fine Wine</em>, <em>Art of Eating</em> and <em>Wine &amp; Spirits</em>. Since April 2019, she has a monthly
+          column "Vu d'Ailleurs" in <em>La Revue du Vin de France</em>. She teaches with the Wine Scholar Guild. She has
+          lectured in preeminent wine congresses in North America and Europe, including IPNC in Oregon, TexSom in Texas,
+          RAW Wine Fair in NY, Terroir Symposium in Toronto, Tasting Climate Change in Montreal, VieVinum in Vienna,
+          Wine Paris &amp; Vinexpo in Paris, etc. She is a member of Les Dames d'Escoffier New York and of the Gérard
+          Basset Foundation grant awarding panel.</p>
+      </div>
+    </div>
+
+    <div class="team-full reveal">
+      <div class="team-full__portrait">
+        <div class="team-full__portrait-styled team-full__portrait-styled--jd">
+          <img src="jared david.webp"
+            alt="Jared David — General Manager &amp; Partner" />
+        </div>
+        <div class="team-full__name-plate">
+          <p class="team-full__role">General Manager &amp; Partner</p>
+          <h3>Jared David</h3>
+        </div>
+      </div>
+      <div class="team-full__bio">
+        <p>Also born in Fitchburg, Massachusetts (in the same hospital as Jon, <em>several</em> years prior) but raised
+          in rural Western Pennsylvania, Jared David was drawn to the vibrancy and rhythm of city life at a young age.
+          As a child, he looked forward to the frequent trips his family took to Pittsburgh, Toronto and Washington, DC.
+          During a family dinner at DC restaurant Galileo, eight-year-old Jared ordered the quail, to the server's (but
+          not his parents'!) surprise. It was clear early on that his passion for fine dining had been ignited.</p>
+
+        <p>Jared got his start working in the restaurant industry at only 14 years old as a busser at <em>"the nicest
+            restaurant in town."</em> He eventually moved into kitchen roles, moving his way up the ranks the
+          old-fashioned way: from dishwasher to Garde Manger to working the Pasta Line.</p>
+
+        <p>In 2002, after graduating from The George Washington University with a degree in International Affairs, Jared
+          moved to New York City, instead working in a variety of industries, from sales to the performing arts.</p>
+
+        <p>Jared was drawn back to the restaurant world in 2005 when he became a Server/Captain at <em>Brasserie 8
+            ½</em>, the long-gone but once swanky upscale French brasserie in Midtown Manhattan. From here, his career
+          in hospitality skyrocketed with stints working in nightlife at <em>Buddha Bar</em> in the Meatpacking District
+          and in management positions at Michelin-starred restaurants such as <em>Babbo</em> and <em>La Sirena</em>.</p>
+
+        <p>In 2019, Jared joined the team at <em>Racines</em> in Tribeca as General Manager, the acclaimed wine-bar
+          where he first met and worked alongside renowned Sommelier, Pascaline Lepeltier.</p>
+
+        <p>After the pandemic, Jared joined forces with Pascaline, Chef Jonathan Karis and David Lillie to open
+          <em>Chambers</em> in the former Racines space where he now serves as General Manager and Partner, lending his
+          passion for delivering approachable yet excellent service to the restaurant's destination-worthy dining
+          experience.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="press">
+    <div class="press__inner reveal">
+      <p class="label">Recognition</p>
+      <div class="press__logos">
+        <div class="press__item">
+          <span class="press__pub">James Beard Foundation</span>
+          <span class="press__award">2026 Nominee</span>
+        </div>
+        <div class="press__divider"></div>
+        <div class="press__item">
+          <span class="press__pub">The New York Times</span>
+          <span class="press__award">Best NYC Restaurants 2025</span>
+        </div>
+        <div class="press__divider"></div>
+        <div class="press__item">
+          <span class="press__pub">Wine &amp; Spirits</span>
+          <span class="press__award">Top New US Sommeliers</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reservations" id="reservations">
+    <div class="reservations__inner">
+
+      <div class="reservations__header reveal">
+        <p class="label">Reserve a Table</p>
+        <h2>Join us for<br><em>dinner</em></h2>
+        <p class="reservations__sub">Book instantly via OpenTable, or send us a note directly — we'll confirm within a
+          few hours.</p>
+      </div>
+
+      <div class="reservations__grid">
+
+        <div class="res-form reveal">
+          <p class="res-form__heading">Send a Request</p>
+          <form class="res-form__form" id="reservationForm" novalidate>
+            <div class="res-form__row">
+              <div class="res-form__field">
+                <label for="res-name">Full Name</label>
+                <input type="text" id="res-name" name="name" placeholder="Jane Smith" required />
+              </div>
+              <div class="res-form__field">
+                <label for="res-email">Email</label>
+                <input type="email" id="res-email" name="email" placeholder="jane@email.com" required />
+              </div>
+            </div>
+            <div class="res-form__row">
+              <div class="res-form__field">
+                <label for="res-date">Preferred Date</label>
+                <input type="date" id="res-date" name="date" required />
+              </div>
+              <div class="res-form__field">
+                <label for="res-time">Preferred Time</label>
+                <select id="res-time" name="time" required>
+                  <option value="" disabled selected>Select a time</option>
+                  <option>5:30 PM</option>
+                  <option>6:00 PM</option>
+                  <option>6:30 PM</option>
+                  <option>7:00 PM</option>
+                  <option>7:30 PM</option>
+                  <option>8:00 PM</option>
+                  <option>8:30 PM</option>
+                  <option>9:00 PM</option>
+                  <option>9:30 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="res-form__row">
+              <div class="res-form__field">
+                <label for="res-guests">Party Size</label>
+                <select id="res-guests" name="guests" required>
+                  <option value="" disabled selected>Guests</option>
+                  <option>1 guest</option>
+                  <option>2 guests</option>
+                  <option>3 guests</option>
+                  <option>4 guests</option>
+                  <option>5 guests</option>
+                  <option>6 guests</option>
+                  <option>7+ guests — large party</option>
+                </select>
+              </div>
+              <div class="res-form__field">
+                <label for="res-occasion">Occasion (optional)</label>
+                <input type="text" id="res-occasion" name="occasion" placeholder="Birthday, anniversary…" />
+              </div>
+            </div>
+            <div class="res-form__field res-form__field--full">
+              <label for="res-notes">Special Requests</label>
+              <textarea id="res-notes" name="notes" rows="3"
+                placeholder="Dietary restrictions, seating preferences…"></textarea>
+            </div>
+            <button type="submit" class="btn btn--dark res-form__submit">Send Request</button>
+            <p class="res-form__disclaimer">We'll confirm your reservation by email within a few hours. For same-day
+              requests, please call us directly.</p>
+          </form>
+          <div class="res-form__success" id="formSuccess">
+            <div class="res-form__success-icon">✓</div>
+            <h4>Request Received</h4>
+            <p>Thank you — we'll be in touch shortly to confirm your table.</p>
+          </div>
+        </div>
+
+        <div class="res-opentable reveal">
+          <p class="res-form__heading">Book Instantly</p>
+          <div class="res-opentable__card">
+            <div class="res-opentable__logo">OpenTable</div>
+            <p>Confirm your reservation in real-time with instant availability. No waiting — your table is booked the
+              moment you click.</p>
+            <a href="https://www.opentable.com/r/chambers-new-york" target="_blank" class="btn btn--dark">Book on
+              OpenTable</a>
+          </div>
+          <div class="res-opentable__note">
+            <p class="visit__detail-label">Large Parties &amp; Private Events</p>
+            <p>For parties of 7 or more, or to enquire about private dining, please email us directly.</p>
+            <a href="mailto:reservations@chambers.nyc" class="link-arrow">reservations@chambers.nyc →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="visit__grid">
+      <div class="visit__info reveal">
+        <p class="label">Find Us</p>
+        <h2>Come as you are</h2>
+
+        <div class="visit__detail">
+          <p class="visit__detail-label">Address</p>
+          <p>94 Chambers Street<br>New York, NY 10007</p>
+        </div>
+        <div class="visit__detail">
+          <p class="visit__detail-label">Hours</p>
+          <p>Dinner — Tuesday through Sunday<br>Bar — Opens earlier</p>
+        </div>
+        <div class="visit__detail">
+          <p class="visit__detail-label">Reservations</p>
+          <p>Via OpenTable or walk-in welcome at the bar</p>
+        </div>
+        <div class="visit__detail">
+          <p class="visit__detail-label">Instagram</p>
+          <p><a href="https://www.instagram.com/chambers.nyc/" target="_blank">@chambers.nyc</a></p>
+        </div>
+
+        <a href="https://www.opentable.com/r/chambers-new-york" target="_blank" class="btn btn--dark visit__btn">Reserve
+          a Table</a>
+        <a href="https://www.toasttab.com/chambers/giftcards" target="_blank" class="btn btn--outline visit__btn">Gift
+          Cards</a>
+      </div>
+
+      <div class="visit__map reveal">
+        <iframe title="Chambers location map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.3276037516767!2d-74.01485!3d40.71459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b3cc79a72e3%3A0xf367674e4fd63656!2sChambers!5e0!3m2!1sen!2sus!4v1699999999999"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div>
+          <p class="footer__logo">Chambers</p>
+          <p class="footer__tagline">Destination-worthy dining, with a neighbourhood vibe.</p>
+        </div>
+        <a href="https://www.opentable.com/r/chambers-new-york" target="_blank" class="footer__reserve-link">
+          Reserve a Table →
+        </a>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Chambers · 94 Chambers Street, New York, NY 10007</p>
+        <p class="footer__credit">Redesign concept — not official.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
